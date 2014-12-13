@@ -1,0 +1,9 @@
+{
+  "firebase": "turing",
+  "public": "www",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
