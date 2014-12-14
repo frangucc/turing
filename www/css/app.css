@@ -194,20 +194,49 @@ body > ng-include > ion-nav-view > div > ion-pane > header {
   #boxes-home .boxyfoxy span {
     font-weight: 900; }
 
-#main-content h2 {
+.first-header p {
+  margin-top: 30px; }
+.first-header h2 {
   padding-top: 0px;
   margin: 20px 0 20px 0;
   text-align: center;
   margin-top: -50px !important; }
-#main-content h3 {
+.first-header h3 {
   padding-top: 80px;
   margin: 50px 0 20px 0;
-  text-align: center; }
-#main-content h6 {
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 30px; }
+.first-header h6 {
   height: 20px;
   text-align: center;
   margin-bottom: 60px; }
-#main-content .centered-text a {
+
+.nav {
+  padding: 10px 0 20px 0; }
+  .nav a {
+    margin-top: -20px;
+    color: #fff !important;
+    padding-right: 20px; }
+
+#summary {
+  border: 1px solid #dddddd;
+  position: absolute;
+  top: 300px;
+  width: 150px; }
+
+#summary .title {
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+  background-color: #dddddd;
+  font-size: 12pt;
+  font-weight: bold; }
+
+#summary .contents {
+  margin: 5px;
+  font-size: 80%; }
+
+.centered-text a {
   margin: 20px 0 20px 0; }
 
 .slider-pager {
@@ -353,5 +382,146 @@ body > ng-include > ion-nav-view > div > ion-pane > header {
   padding: 20px; }
 #page-platform-mobile a {
   color: #000 !important; }
+
+body {
+  text-align: center; }
+
+#alt-caption {
+  padding-top: 30px; }
+
+.nav {
+  margin-left: 8px; }
+  .nav a {
+    margin-right: 0px; }
+
+#nav-row .left, #nav-row .right {
+  text-align: center; }
+
+.skills {
+  position: relative;
+  left: 10px;
+  margin-top: 10%;
+  z-index: 99999999; }
+
+.banner {
+  position: relative;
+  overflow: auto; }
+  .banner li {
+    list-style: none; }
+  .banner ul li {
+    float: left; }
+
+.sticker {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  padding: 12px 0 20px 0;
+  font-weight: 800;
+  font-family: Roboto;
+  font-family: 18px; }
+
+.pink {
+  background-color: #ee0f5e;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  padding: 12px 0 20px 0;
+  font-weight: 800;
+  font-family: Roboto;
+  margin-left: -150px;
+  margin-top: 40px; }
+
+.green {
+  background-color: #b0c543;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  padding: 12px 0 20px 0;
+  font-weight: 800;
+  font-family: Roboto;
+  margin-left: -150px;
+  margin-top: -20px; }
+
+.yellow {
+  background-color: #ffda0d;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  padding: 12px 0 20px 0;
+  font-weight: 800;
+  font-family: Roboto;
+  margin-left: -150px;
+  margin-top: -20px; }
+
+.orange {
+  background-color: #ff6406;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  padding: 12px 0 20px 0;
+  font-weight: 800;
+  font-family: Roboto;
+  margin-left: -150px;
+  margin-top: -20px; }
+
+.blue {
+  background-color: #01a1ff;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  padding: 12px 0 20px 0;
+  font-weight: 800;
+  font-family: Roboto;
+  margin-left: -150px;
+  margin-top: -20px; }
+
+.purple {
+  background-color: #420085;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  padding: 12px 0 20px 0;
+  font-weight: 800;
+  font-family: Roboto;
+  margin-left: -150px;
+  margin-top: -20px; }
+
+@media screen and (max-width: 1100px) {
+  #main-content {
+    margin-top: -20px; } }
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: #dddddd;
+    text-align: center; }
+
+  section {
+    text-align: center !important;
+    width: 80% !important;
+    padding: 0px 100px 0px 100px;
+    margin-left: 10% !important;
+    background-color: #efefef; }
+
+  .row {
+    text-align: center; } }
+.quickfact {
+  padding: 2% 2% 4% 2%;
+  color: #fff;
+  text-align: left;
+  line-height: 24px;
+  background-color: #4a229c; }
+
+.campusfact {
+  padding: 2% 2% 4% 2%;
+  color: #fff !important;
+  text-align: left !important;
+  line-height: 24px; }
+  .campusfact h2 {
+    color: #fff !important;
+    text-align: left !important; }
+
+h5 {
+  font-size: 1.4em;
+  color: #fff !important;
+  text-align: right; }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,226 +1,50 @@
-style.
-  body {
-    text-align:center
-  }
-  #alt-caption {
-  padding-top:30px;
-  }
 
-  .nav {
-  margin-left:8px;
-  }
-  .nav a {
-  margin-right:0px;
-  }
-  #nav-row .left {
-  text-align:center;
-  }
-  #nav-row .right {
-  text-align:center;
-  }
-  .skills {
-  position:relative;
-  left:10px;
-  margin-top: 10%;
-  z-index:99999999;
-  }
-  .banner { position: relative; overflow: auto; }
-  .banner li { list-style: none; }
-  .banner ul li { float: left; }
-  .sticker {
-  width:50px;
-  height:50px;
-  color: #fff;
-  padding:12px 0 20px 0;
-  font-weight:800;
-  font-family: Roboto;
-  font-family:18px;
-  }
-
-  .pink {
-    background-color: #ee0f5e;
-    width:50px;
-  height:50px;
-    color: #fff;
-  padding:12px 0 20px 0;
-  font-weight:800;
-  font-family: Roboto;
-  margin-left:-150px;
-  margin-top:40px;
-
-  }
-  .green {
-    background-color:#b0c543;
-    width:50px;
-  height:50px;
-    color: #fff;
-  padding:12px 0 20px 0;
-  font-weight:800;
-  font-family: Roboto;
-  margin-left:-150px;
-  margin-top:-20px;
-    
-  }
-  .yellow {
-    background-color:#ffda0d;
-    width:50px;
-  height:50px;
-    color: #fff;
-  padding:12px 0 20px 0;
-  font-weight:800;
-  font-family: Roboto;
-  margin-left:-150px;
-  margin-top:-20px;
-
-  }
-  .orange {
-    background-color:#ff6406;
-    width:50px;
-  height:50px;
-    color: #fff;
-  padding:12px 0 20px 0;
-  font-weight:800;
-  font-family: Roboto;
-  margin-left:-150px;
-  margin-top:-20px;
-
-  }
-
-  .blue {
-    background-color:#01a1ff;
-    width:50px;
-  height:50px;
-    color: #fff;
-  padding:12px 0 20px 0;
-  font-weight:800;
-  font-family: Roboto;
-  margin-left:-150px;
-  margin-top:-20px;
-
-
-  }
-  .purple {
-    background-color:#420085;
-    width:50px;
-  height:50px;
-    color: #fff;
-  padding:12px 0 20px 0;
-  font-weight:800;
-  font-family: Roboto;
-  margin-left:-150px;
-  margin-top:-20px;
-
-  }
-
-
-  @media screen and (max-width: 1100px) {
-
-  #main-content {
-    margin-top:-20px;
-    }
-  }
-  @media screen and (min-width: 1100px) {
-  body {
-  background-color: #0e3b46;
-  text-align:center;
-  }
-  #main-content .first {
-
-  }
-  section {
-    text-align:center !important;
-    width: 80% !important;
-    padding: 0px 100px 0px 100px;
-    margin-left:10% !important;  
-    background-color: #efefef;
-    }
-  .row {
-    text-align:center;
-  }
-
-  }
-
-
-section#main-content(style='background-color: #efefef;margin-top:-40px;')
+section#main-content(style='background-color: #efefef;margin-top:0px;padding:80px 0 0 0;background-image:url("./img/kid-pic.jpg");min-height:800px;background-size:cover')
   .row
-    .large-12.columns.sticker
-      p.pink UX
-      p.green FE
-    .clear
     .large-12.columns
-      ng-include(src="'shared/slideshows/slide_tap_one.html'")
+      .large-3.columns.quickfact.show-for-large
+        p 
+          strong Sector Growth
+          br
+          | Much of the expected output growth in 2010–2020 is being driven by the software publishing sector, projected to grow from $156.9 billion to $368.2 billion in real output, an increase of $211.3 billion, making it one of the largest growing industries in real output. 
+      .large-3.columns
+      .large-3.columns
+      .large-3.columns.show-for-large
+        h5(style='margin-top:0px;') 
+          strong Francesco 
+          | is translating his passion for video games into practical skills. He is now developing his own 3D game in JavaScript’s three.js. 
+          br
+          br
+          a(href='#', style='color:#000') 
+            h4 See his projects
 
-section#main-content(style='background-color: #e3e3e3;')
+section#main-content(style='background-color: #34a24e;margin-top:-40px;padding:80px 0 0 0;')
   .row
-    .large-12.columns.sticker
-      p.pink UX
-      p.green FE
-      p.yellow CS
-    .clear
-    .large-12.columns.centered-text
-      ng-include(src="'shared/slideshows/slide_tap_two.html'")
-
-
-section#main-content(style='background-color: #626773;')
+    .large-12.columns
+      .large-3.columns.campusfact
+        h2 Park Ridge Illinois Campus Opening January, 2015
+        br
+        p The majority of instructional computer camps are located in the Northeast, partially due to the density of educational institutions and access to their campuses when school’s are not in session. 
+      .large-3.columns.campusfact
+        p Households with the highest median household incomes were in the Northeast ($53,864) followed by the West ($52,376), then the Midwest ($48,722) and finally the South ($46,899).  However, with a concentration of instructional computer camps in the Northeast, there is an opportunity to serve the West and Midwest markets more effectively.
+      .large-3.columns.campusfact
+        p concentration of instructional computer camps in the Northeast, there is an opportunity to serve the West and Midwest markets more effectively.
+        p More and more, parents are expecting a productive and enriching camp experience for their children, so it benefits us to make that our top-level message: How does this camp benefit the child?
+      .large-3.columns.campuspic
+        p
   .row
-    .large-12.columns.sticker
-      p.pink UX
-      p.orange ID
-      p.blue FS
-    .clear
-    .large-12.columns.centered-text
-      ng-include(src="'shared/slideshows/slide_cpgio.html'")
+    .large-12.columns
+      p &nbsp;
 
-section#main-content(style='background-color: #e5e5e5;')
+section#main-content(style='background-color: #0581e4;margin-top:-40px;padding:80px 0 0 0;height:8000px;background-image:url("./img/kids-bg.jpg");background-repeat:no-repeat;')
   .row
-    .large-12.columns.sticker
-      p.pink UX
-      p.yellow CS
-    .large-12.columns.centered-text
-      ng-include(src="'shared/slideshows/slide_medycation.html'")
+    .large-12.columns
+      h2(style='padding-top:45px;color:#fff !important;') Park Ridge Illinois Campus Opening January, 2015
+      p(style='color:#fff !important;padding-top:20px;width:80%;margin:0px auto;') We believe that every child should advance in any environment despite the possibilities of constraints. We look forward to the future generation of young computer scientists and their ability to unlock the future for themselves, their families and for the sector as a whole.
+      br
+      br
+      br
 
-section#main-content(style='background-color: #afdeee;')
-  .row
-    .large-12.columns.sticker
-      p.pink UX
-      p.green FE
-    .large-12.columns.centered-text
-      ng-include(src="'shared/slideshows/slide_cst.html'")
-
-section#main-content(style='background-color: #1d1d1d;')
-  .row
-    .large-12.columns.sticker
-      p.pink UX
-      p.yellow CS
-      p.green FE
-    .large-12.columns.centered-text
-      ng-include(src="'shared/slideshows/slide_koupn.html'")
-
-section#main-content(style='background-color: #f0f0f0;')
-  .row
-    .large-12.columns.sticker
-      p.pink UX
-      p.orange ID
-    .large-12.columns.centered-text
-      ng-include(src="'shared/slideshows/slide_tround.html'")
-
-section#main-content(style='background-color: #1575d8;')
-  .row
-    .large-12.columns.sticker
-      p.pink UX
-      p.green FE
-      p.purple V
-    .large-12.columns.centered-text
-      ng-include(src="'shared/slideshows/slide_monthlys.html'")
-
-section#main-content(style='background-color: #efefef;')
-  .row
-    .large-12.columns.sticker
-      p.pink UX
-      p.green FE
-      p.purple V
-    .large-12.columns.centered-text
-      ng-include(src="'shared/slideshows/slide_monthlys_two.html'")
 
 
 

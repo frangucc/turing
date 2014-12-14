@@ -25,11 +25,116 @@ html
     script(src='/lib/underscore/underscore.js')
     script(src='/lib/angular-socket-io/socket.js')
     script(src='/js/application.js')
+    script(src='/js/jquery-scrolltofixed-min.js', type='text/javascript')
+
+    style.
+
+      body ul {
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      }
+      .main {
+      margin: 0 auto;
+      }
+      .banner {
+      background-color: #4a229c;
+      padding: 20px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      }
+      .title {
+      font-size: 140%;
+      font-weight: bold;
+      }
+      .header {
+      background-color: #eee;
+      padding: 20px;
+      }
+      .header.scroll-to-fixed-fixed {
+      color: red;
+      width:100% !important;
+      }
+      .content {
+      padding: 20px;
+      overflow: hidden;
+      }
+      .footer {
+      background-color: #eee;
+      padding: 20px;
+      clear: both;
+      }
+      .footer.scroll-to-fixed-fixed {
+      color: red;
+      }
+      .footer-content {
+      background-color: #aaa;
+      padding: 20px;
+      }
+      .demos li {
+      margin-bottom: 20px;
+      }
+      .left {
+      float: left;
+      width: 680px;
+      }
+      .right {
+      float: left;
+      margin-left: 40px;
+      }
+      .summary {
+      background-color: #4a229c;
+      color:#fff !important;
+      overflow: hidden;
+      margin-top: 20px;
+      }
+      .summary .caption {
+      font-size: 12pt;
+      font-weight: bold;
+      padding: 5px;
+      }
+      .summary.scroll-to-fixed-fixed {
+      margin-top: 0px;
+      }
+      .summary.scroll-to-fixed-fixed .caption {
+      color: red;
+      }
+      .contents {
+      width: 150px;
+      margin: 10px;
+      font-size: 80%;
+      }
 
 
 
-  body(ng-app='Franchino' animation='slide-left-right-ios7', ng-controller='AppCtrl')
-    ng-include(src="'main.html'")
+
+  body(ng-app='Franchino' animation='slide-left-right-ios7', ng-controller='AppCtrl', style='zoom:1;')
+    ul
+      li.banner
+        .main
+          .row
+            .large-12.columns.centered-text.first-header
+              img(src='./img/logo.png', style='height:100px;margin-top:5%;')
+              h3(style='margin-bottom:5px;color:#fff !important;margin-top:-5%;') The Young Turing Academy 
+              h4(style='color:#fff !important;font-size:1.3em;margin-top:20px;') Youth computer science training culturing and society
+   
+      li.header(style='z-index: auto; position: static; top: auto;background-color: #562dab;')
+        .main
+          .row
+            .large-12.columns.centered-text
+              .nav
+                a(href='/', style='') Interests &nbsp; 
+                a(href='/#/resume', style='') Capabilities &nbsp;
+                a(href='/#/blog', style='') Membership &nbsp;
+                a(href='/#/contact', style='') Curriculum  &nbsp;
+                a(href='/#/contact', style='') Board &nbsp;
+                a(href='/#/contact', style='') Foundation &nbsp;
+      ng-include(src="'main.html'")
+      li.footer
+      li.footer-content
+    
+        
+    
     
 
 
